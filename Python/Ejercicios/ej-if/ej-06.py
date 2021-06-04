@@ -1,11 +1,7 @@
 #if es la condición padre -> este siempre tiene que ir.
 #opcionalmente
-#elif una condición alterna -> no siempre tiene que ir.
+#elif una condición alterna -> no siempre tiene que ir. Esta se ejecutara si el if da falso
 #else -> sino comodin o default 
-
-#Operadores
-v_num1 = 5
-v_num2 = 4
 
 """ 5 >= 4 #-> si o que no -> verdadero y falso
 5 <= 4
@@ -13,6 +9,10 @@ v_num2 = 4
 5 > 4
 5 == 4
 5 != 4 #Diferente  """
+
+#Operadores
+v_num1 = 5
+v_num2 = 4
 
 #5 y 4
 print(v_num1 > v_num2)          #True
@@ -23,7 +23,7 @@ print(v_num1 == v_num2)         #False
 print(v_num1 != v_num2)         #True
 
 
-if (v_num1 < v_num2):
+if (v_num1 != v_num2):
     print("entro")
 else: 
     print("no entro")
